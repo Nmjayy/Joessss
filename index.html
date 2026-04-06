@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe's Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #4ade80, #3b82f6);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #fbbf24;
+      color: black;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.4);
+      padding: 25px;
+      border-radius: 15px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Joe's 👋</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi Joe's 👋</h2>
+  <p>Welcome to your vibrant new website. 🌈</p>
+  <a href="#features" class="btn">See Features</a>
+</section>
+
+<section id="features" class="features">
+  <div class="card">
+    <h3>Fun</h3>
+    <p>Everything is playful and colorful here.</p>
+  </div>
+  <div class="card">
+    <h3>Modern</h3>
+    <p>Clean design with interactive elements.</p>
+  </div>
+  <div class="card">
+    <h3>Easy</h3>
+    <p>Simple structure that’s easy to update on GitHub.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Joe's Website. Made with 💛 and 🌈</p>
+</footer>
+
+</body>
+</html>
